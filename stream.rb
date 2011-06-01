@@ -14,6 +14,6 @@ class Stream < Goliath::API
       env.stream_send(".\n")
     end
     
-    env.streaming_response(202, {})
+    [200, {}, Goliath::Response::STREAMING]
   end
 end

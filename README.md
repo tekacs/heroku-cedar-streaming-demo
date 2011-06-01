@@ -1,6 +1,6 @@
 # A Heroku Goliath Demonstration
 
-This is a little app to demonstrate the power of Heroku's new Cedar platform.
+This is a little app to demonstrate the power of Heroku's new HTTP stack.
 
 It uses Goliath to stream a response to HTTP requests, keeping connections alive perpetually (with a little message every 29 seconds) and also sending back generated Fibonacci numbers (and it generates from scratch for each new request).
 

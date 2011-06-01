@@ -1,1 +1,1 @@
-web:    bundle exec ruby app.rb -sv -e production -p $PORT
+web:    bundle exec ruby stream.rb -sv -e production -p $PORT

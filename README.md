@@ -10,7 +10,7 @@ Please note that due to the simplistic use of streaming, web browsers won't rend
 
 Set-up as follows:
 
-	git clone https://github.com/tekacs/heroku-cedar-streaming-demo.git
+	git clone https://github.com/tekacs/heroku-cedar-streaming-demo.git .
 	heroku create --stack cedar <appname>
 	git push heroku master
 

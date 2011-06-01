@@ -2,6 +2,8 @@
 
 This is a little app to demonstrate the power of Heroku's new HTTP stack.
 
+(Hint: A working version of this is up at `http://cedar-fib.heroku.com/` but read the below to realise why it won't work if you bring it up in a browser...)
+
 It uses Goliath to stream a response to HTTP requests, keeping connections alive perpetually (with a little message every 29 seconds) and also sending back generated Fibonacci numbers (and it generates from scratch for each new request).
 
 As it runs on Goliath, not only is the response streamed live, but the server is also capable of handling multiple requests using a single dyno (and quite well, too).

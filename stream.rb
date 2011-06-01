@@ -8,10 +8,19 @@ class Stream < Goliath::API
   end
   
   def response(env)
-    i = 0
     
     keepalive = EM.add_periodic_timer(1) do
       env.stream_send(".\n")
+    end
+    
+    EM.defer do
+      i = 0
+      n, m = 0, 1
+      while true
+        env.stream_send("#{i}: #{n}\n")
+        n, m = m, n + m
+        i += 1
+      end
     end
     
     # EM.add_timer(10) do

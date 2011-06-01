@@ -14,12 +14,12 @@ class Stream < Goliath::API
       env.stream_send(".\n")
     end
     
-    EM.add_timer(10) do
-      keepalive.cancel
-      
-      env.stream_send("End of stream.")
-      env.stream_close
-    end
+    # EM.add_timer(10) do
+    #   keepalive.cancel
+    #   
+    #   env.stream_send("End of stream.")
+    #   env.stream_close
+    # end
     
     [200, {'Content-Type' => 'text/plain'}, Goliath::Response::STREAMING]
   end

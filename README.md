@@ -1,4 +1,4 @@
-* A Heroku Goliath Demonstration
+# A Heroku Goliath Demonstration
 
 This is a little app to demonstrate the power of Heroku's new Cedar platform.
 

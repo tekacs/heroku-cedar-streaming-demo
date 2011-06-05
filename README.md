@@ -8,7 +8,7 @@ It uses Goliath to stream a response to HTTP requests, keeping connections alive
 
 As it runs on Goliath, not only is the response streamed live, but the server is also capable of handling multiple requests using a single dyno (and quite well, too).
 
-Please note that due to the simplistic use of streaming, web browsers won't render any content from the page that this app throws up and you need to use `curl` or a similar tool to get at the results.
+Please note that due to the simplistic use of streaming, some web browsers (such as Google's Chrome) won't render any content from the page that this app throws up and you need to use `curl` or a similar tool to get at the results (some browsers, such as Firefox, however, *do* render the content as it is streamed).
 
 Set-up as follows:
 
